@@ -3,14 +3,14 @@ import numpy as np
 import serial
 import serial.tools.list_ports
 
-from Blocks import Block
-from control_diagram_widget_03 import ControlDiagramWidget 
+from blocks import Block
+from control_diagram_widget import ControlDiagramWidget 
 from console_widget import ConsoleWidget
 from plot_widget import PlotWidget
 from table_widget import TableViewDialog
-from caracterizacion_v5 import Motor_model
-from Data_container import DataContainer
-from StateMachine_v2 import StateMachine
+from caracterizacion import Motor_model
+from data_container import DataContainer
+from state_machine import StateMachine
 from trajectory_generation import DrawWindow
 
 from queue import Queue
@@ -128,7 +128,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(central_widget)
         master_layout = QVBoxLayout()
         central_widget.setLayout(master_layout)
-        self.setWindowTitle("S-Vision")
+        self.setWindowTitle("S-Vision-Testing")
         # Layout 00 
 
         self.layout_superior=QHBoxLayout()
